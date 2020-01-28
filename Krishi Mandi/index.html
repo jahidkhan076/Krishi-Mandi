@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Krishi Mandi</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!--HEADER-->
+    <!--Language-->
+    <div class="header">
+        <div class="container">
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="background-color:ghostwhite;color:black;float:right;margin:20px;">
+                    Select Language
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">English</a>
+                </div>
+            </div>
+        </div>
+
+        <!--logo & name-->
+        <div class="logo-name" style="margin:auto;background-color:aquamarine;">
+            <img src="images/logo.png" alt="Krishi Mandi Logo" style="width:120px;height120px;float:left;margin:30px;" />
+            <br /><br /><br />
+            <h1 style="color:black;font-family:Times New Roman;letter-spacing: 3px;word-spacing: 5px;font-size:40px;">KRISHI MANDI</h1>
+            <br />
+        </div>
+    </div>
+
+    <!--NavBar-->
+    <table id="customers">
+        <tr>
+            <th><a href="index.html" style="color:black">Home</a></th>
+            <th><a href="links/aboutus.html" style="color:black">About Us</a></th>
+            <th><a href="links/fregistration.html" style="color:black">Seller Registration</a></th>
+            <th><a href="links/buyerregistration.html" style="color:black">Buyer Registration</a></th>
+            <th><a href="links/login.html" style="color:black">Login</a></th>
+            <th><a href="" style="color:black">Help</a></th>
+        </tr>
+    </table>
+
+    <!--/HEADER-->
+    <!--MAIN CONTENT-->
+    <div class="row">
+
+    </div>
+
+
+    <!--SIDE NAV-->
+    <div class="sidenav column" id="left">
+
+        <!--////////////-->
+        <button class="dropdown-btn">
+            Major Crops
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="links/wheat/wheat.html">Wheat</a>
+            <a href="links/maize/Maize.html">Maize</a>
+            <a href="links/sugarcane/Sugarcane.html">Sugarcane</a>
+            <a href="links/pulses/Pulses.html">Pulses</a>
+            <a href="links/rice/Rice.html">Rice</a>
+            <a href="links/jute/Jute.html">Jute</a>
+        </div>
+
+        <!--/////////////-->
+        <button class="dropdown-btn">
+            Input Material
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="links/seeds/Seeds.html">Seeds</a>
+            <a href="#">Fertiliser</a>
+            <a href="#">Pesticide</a>
+        </div>
+
+        <!--////////////-->
+        <button class="dropdown-btn">
+            Soil Health
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Soil Quality Check-up</a>
+
+        </div>
+
+        <!--///////////-->
+        <button class="dropdown-btn">
+            Storage
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="links/Storage/coldstorage/coldstorage.html">Cold Storage</a>
+
+        </div>
+
+        <a href="#contact">Transportation</a>
+
+        <!--///////////-->
+        <button class="dropdown-btn">
+            Weather
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Weather Details</a>
+            <a href="#">Extreme Weather Alert</a>
+        </div>
+
+        <a href="#contact">Technical Support</a>
+    </div>
+
+    <!--CENTER-->
+    <img src="images/slide1.jpg" id="center" class="column" style="margin:8px;width:58%;" />
+
+
+
+    <!--Govt Policies-->
+    <div class="sidenav column" id="govt">
+        <!--////////////-->
+        <a href="https://farmer.gov.in/imagedefault/january-%20march%2010-8-2018.pdf" target="_blank">E-Bulletin</a>
+        <a href="https://pmfby.gov.in/" target="_blank">Pradhan Mantri Fasal Bima Yojana</a>
+        <a href="https://mkisan.gov.in/" target="_blank">mKisan</a>
+        <a href="https://rkvy.nic.in/reportmenu/reportnavigation.html" target="_blank">RKVY Projects</a>
+        <a href="https://farmer.gov.in/StateAgriDepartments.aspx" target="_blank">State Agriculture Department</a>
+        <a href="#contact" target="_blank">Transportation</a>
+
+
+
+    </div>
+    <!--/MAIN CONTENT-->
+
+    <script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+    </script>
+</body>
+</html>
